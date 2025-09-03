@@ -6,10 +6,31 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+	<article class="relative flex items-center justify-center w-full max-w-5xl mx-auto py-12">
+  <!-- Background text image -->
+  <img
+    src="/portfolio_overskrift.png"
+    alt="overskrift"
+    class="absolute left-1/2 top-1/2
+           w-[180%] md:w-[140%] lg:w-[180%]
+           -translate-x-1/2 -translate-y-[75%]  <!-- move higher on mobile -->
+           md:-translate-y-1/2                  <!-- reset for tablet/desktop -->
+           object-contain z-0 pointer-events-none"
+  />
+
+  <!-- Foreground portrait image -->
+  <img
+    src="/landingpage_picture.png"
+    alt="portrait"
+    class="relative z-10 mx-auto max-w-[70%] md:max-w-md lg:max-w-lg"
+  />
+
+  <!-- <div class="grid justify-center">
+	<p>"not a pizza, not a drink, just me"</p>
+  </div> -->
+</article>
+
+
+
+
 </MainLayout>
