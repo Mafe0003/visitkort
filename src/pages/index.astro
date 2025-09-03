@@ -6,6 +6,8 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
+
+	<!-- homepage first section -->
 	<article class="relative flex items-center justify-center w-full max-w-5xl mx-auto pt-12">
   <!-- Background text image -->
   <img
@@ -36,9 +38,25 @@ import thumbsup from "../assets/images/thumbsup.png";
 	<p class="font-caveat md:text-3xl">"not a pizza, not a drink, just me"</p>
   </div>
 
-<article>
-<h2 class="font-caveat text-primary-900 text-6xl mt-8 md:text-[12rem] md:ml-9">what inspires me</h2>
+  <!-- "what inspires me" section -->
+<article class="w-full my-4 md:my-8">
+  <!-- Heading first -->
+  <h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem]
+           ml-2 md:ml-16 relative z-10"
+  >
+    what inspires me
+  </h2>
+
+  <!-- Image with negative top margin -->
+  <img
+    src="/pinterest.jpg"
+    alt="portrait"
+    class="w-screen md:w-full object-cover -mt-4 md:-mt-12"
+  />
 </article>
+
+
 
 
 
