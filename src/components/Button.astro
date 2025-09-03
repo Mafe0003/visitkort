@@ -1,5 +1,24 @@
 ---
+
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
+
+<div class="group inline-block">
+    <button 
+      class="relative font-caveat my-6 ml-3 text-xl md:text-2xl md:ml-30 md:py-6
+             transition-transform duration-300 
+             md:group-hover:scale-105"
+    >
+      <span class="relative z-10"><slot /></span>
+
+      <!-- underline SVG -->
+      <img 
+        src="/underline.svg" 
+        alt="underline"
+        class="absolute left-0 w-full 
+               opacity-0 md:group-hover:opacity-100 active:opacity-100
+               transition-opacity duration-300
+               translate-y-1"
+      />
+    </button>
 </div>
+

@@ -36,3 +36,24 @@
 }
 @layer utilities {
 }
+
+/* Custom cursor site-wide */
+body {
+  cursor: url("/pointer.svg") 16 16, auto;
+}
+
+/* Custom cursor site-wide, including clickable elements */
+body,
+button,
+a,
+input,
+textarea,
+select,
+label {
+  cursor: url("/pointer.svg") 16 16, auto;
+}
+
+/* Optional: all elements */
+* {
+  cursor: url("/pointer.svg") 16 16, auto;
+}
