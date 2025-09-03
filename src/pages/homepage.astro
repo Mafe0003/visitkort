@@ -1,0 +1,87 @@
+---
+import MainLayout from "../layouts/MainLayout.astro";
+import Button from '../components/Button.astro';
+import Link from '../components/Link.astro';
+import { Image } from 'astro:assets';
+
+---
+
+<MainLayout title="Titel">
+
+	<!-- homepage first section -->
+	<article class="relative flex items-center justify-center w-full max-w-5xl mx-auto pt-12">
+  <!-- Background text image -->
+  <img
+    src="/portfolio_overskrift.png"
+    alt="overskrift"
+    class="absolute left-1/2 top-1/2
+           w-[180%] md:w-[140%] lg:w-[180%]
+           -translate-x-1/2 -translate-y-[75%]  <!-- move higher on mobile -->
+           md:-translate-y-1/2                  <!-- reset for tablet/desktop -->
+           object-contain z-0 pointer-events-none"
+  />
+
+  <!-- Foreground portrait image -->
+  <a href="aboutme" class="block">
+  <img
+    src="/landingpage_picture.png"
+    alt="portrait"
+    class="relative z-10 mx-auto max-w-[70%] md:max-w-md lg:max-w-lg 
+           transition-transform duration-300 
+           md:hover:scale-105"
+  />
+</a>
+</article>
+
+<!-- homepage "tekst" -->
+<div class="grid justify-end pr-4
+            md:pr-48">
+	<p class="font-caveat md:text-3xl">"not a pizza, not a drink, just me"</p>
+  </div>
+
+  <!-- "what inspires me" section -->
+<article class="w-full my-4 md:my-8">
+  <!-- Heading first -->
+  <h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem]
+           ml-2 md:ml-16 relative z-10"
+  >
+    what inspires me
+  </h2>
+
+  <!-- Image with negative top margin -->
+  <img
+    src="/pinterest.jpg"
+    alt="portrait"
+    class="w-screen md:w-full object-cover -mt-4 md:-mt-12"
+  />
+</article>
+
+<!-- 3x articles med h2 og tekst -->
+<article class="my-4 md:my-8">
+	<h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem] mx-2 md:mx-20">
+	see.
+  </h2>
+	<p class="font-cutive text-secondary-900 md:text-[1.5rem] mx-6 md:mx-60">At the core, I see myself as a curious and open-minded person, always eager to observe, to learn, and to translate inspiration into meaningful visual experiences. For me, design is not just about creating—it's about capturing balance, emotion, and movement, and shaping them into something timeless.</p>
+</article>
+
+<article class="my-4 md:my-8">
+	<h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem] mx-2 md:mx-20 text-right">
+	think.
+  </h2>
+	<p class="font-cutive text-secondary-900 md:text-[1.5rem] mx-6 md:mx-60">Every project begins with reflection. I analyze challenges, connect ideas, and explore possibilities to find clarity in complexity. Thinking is the bridge between inspiration and creation, where intuition meets structure and concepts start to take shape.</p>
+</article>
+
+<article class="my-4 md:my-8">
+	<h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem] mx-2 md:mx-20">
+	create.
+  </h2>
+	<p class="font-cutive text-secondary-900 md:text-[1.5rem] mx-6 md:mx-60">Design comes alive in the act of creation. Here, ideas are transformed into visuals, experiences, and stories—minimalist in form, yet rich in meaning. Creating is about building something honest and functional guided by contrast and balance.</p>
+
+<a href="https://1257degrees.netlify.app/" target="blank"><Button>Have a look at  my latest project →</Button></a>
+</article>
+
+</MainLayout>
