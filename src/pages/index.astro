@@ -3,8 +3,9 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+
 ---
+
 <MainLayout title="Titel">
 
 	<!-- homepage first section -->
@@ -56,8 +57,29 @@ import thumbsup from "../assets/images/thumbsup.png";
   />
 </article>
 
+<!-- 3x articles med h2 og tekst -->
+<article class="my-4 md:my-8">
+	<h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem] mx-2 md:mx-20">
+	see.
+  </h2>
+	<p class="font-cutive text-secondary-900 md:text-[2rem] mx-6 md:mx-60">At the core, I see myself as a curious and open-minded person, always eager to observe, to learn, and to translate inspiration into meaningful visual experiences. For me, design is not just about creating—it's about capturing balance, emotion, and movement, and shaping them into something timeless.</p>
+</article>
 
+<article class="my-4 md:my-8">
+	<h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem] mx-2 md:mx-20 text-right">
+	think.
+  </h2>
+	<p class="font-cutive text-secondary-900 md:text-[2rem] mx-6 md:mx-60">Every project begins with reflection. I analyze challenges, connect ideas, and explore possibilities to find clarity in complexity. Thinking is the bridge between inspiration and creation, where intuition meets structure and concepts start to take shape.</p>
+</article>
 
-
+<article class="my-4 md:my-8">
+	<h2
+    class="font-caveat text-primary-900 text-6xl md:text-[12rem] mx-2 md:mx-20">
+	create.
+  </h2>
+	<p class="font-cutive text-secondary-900 md:text-[2rem] mx-6 md:mx-60">Design comes alive in the act of creation. Here, ideas are transformed into visuals, experiences, and stories—minimalist in form, yet rich in meaning. Creating is about building something honest and functional guided by contrast and balance.</p>
+</article>
 
 </MainLayout>
