@@ -6,7 +6,7 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article class="relative flex items-center justify-center w-full max-w-5xl mx-auto py-12">
+	<article class="relative flex items-center justify-center w-full max-w-5xl mx-auto pt-12">
   <!-- Background text image -->
   <img
     src="/portfolio_overskrift.png"
@@ -19,17 +19,26 @@ import thumbsup from "../assets/images/thumbsup.png";
   />
 
   <!-- Foreground portrait image -->
+  <a href="aboutme" class="block">
   <img
     src="/landingpage_picture.png"
     alt="portrait"
-    class="relative z-10 mx-auto max-w-[70%] md:max-w-md lg:max-w-lg"
+    class="relative z-10 mx-auto max-w-[70%] md:max-w-md lg:max-w-lg 
+           transition-transform duration-300 
+           md:hover:scale-105"
   />
-
-  <!-- <div class="grid justify-center">
-	<p>"not a pizza, not a drink, just me"</p>
-  </div> -->
+</a>
 </article>
 
+<!-- homepage "tekst" -->
+<div class="grid justify-end pr-4
+            md:pr-48">
+	<p class="font-caveat md:text-3xl">"not a pizza, not a drink, just me"</p>
+  </div>
+
+<article>
+<h2 class="font-caveat text-primary-900 text-6xl mt-8 md:text-[12rem] md:ml-9">what inspires me</h2>
+</article>
 
 
 

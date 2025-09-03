@@ -18,6 +18,8 @@
   /*Typografi */
   --font-caveat: "Caveat", cursive;
   --font-cutive: "Cutive Mono", monospace;
+
+  /* Font sizes */
 }
 
 @layer base {
