@@ -1,15 +1,14 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-
 ---
 
 <MainLayout title="Titel">
-
+<main class="p-4 md:p-0 md:mx-0">
 	<!-- homepage first section -->
-	<article class="relative flex items-center justify-center w-full max-w-5xl mt-25">
+	<article class="relative flex items-center justify-center 
+               w-full max-w-5xl md:mx-auto mt-25">
+
   <!-- Background text image -->
   <img
     src="/portfolio_overskrift.png"
@@ -83,5 +82,5 @@ import { Image } from 'astro:assets';
 
 <a href="https://1257degrees.netlify.app/" target="blank"><Button>Have a look at  my latest project →</Button></a>
 </article>
-
+</main>
 </MainLayout>
